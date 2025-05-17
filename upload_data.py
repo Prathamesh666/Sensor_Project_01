@@ -12,7 +12,7 @@ client = MongoClient(uri)
 database_name = "pwskills"
 collection_name = "waferfault"
 
-df = pd.read_csv("C:\Users\Hp\Downloads\Gen AI & DS (PW Skills)\Module 36 (ML Sensor Project)\Sensor Project 01\notebooks\wafer_23012020_041211.csv")
+df = pd.read_csv(r"C:\Users\Hp\Downloads\Gen AI & DS (PW Skills)\Module 36 (ML Sensor Project)\Sensor Project 01\notebooks\wafer_23012020_041211.csv")
 
 json_records = list(json.loads(df.T.to_json()).values())
 
